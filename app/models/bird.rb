@@ -1,2 +1,6 @@
 class Bird < ApplicationRecord
-end
+    has_many :sightings
+    has_many :locations, through: :sightings
+  end
+
+  
